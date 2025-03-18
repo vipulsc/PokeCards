@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  border: 11px solid #d32f2f;
+}
+
+.logo {
+  color: #e74c4c;
+  font-family: cursive;
+  font-size: 48px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  height: 44px;
+  max-width: 300px;
+  border-radius: 16px;
+  border: 1px solid #b5dada;
+}
+
+nav a {
+  justify-content: center;
+  padding-inline: 20px;
+  font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero img {
+  max-width: 88%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  left: 5vw; /* Adjusted for responsiveness */
+  top: 50%;
+  transform: translateY(-100%);
+  color: white;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: -45px;
+}
+
+/* Typography */
+.biggest {
+  font-size: 96px;
+  letter-spacing: 6px;
+}
+.bigger {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.smallest {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* Card Section */
+.card {
+  margin-top: 100px;
+  color: white;
+  display: grid;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 48px;
+}
+
+input {
+  color: black;
+  border-radius: 12px;
+  height: 30px;
+}
+
+/* Horizontal Line */
+hr {
+  margin-top: 50px;
+  border: 2px solid #d32f2f;
+}
+
+/* Footer */
+.foot {
+  margin-top: 140px;
+  background-color: #d32f2f;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Search Box */
+.search {
+  color: black;
+  text-align: center;
+  border: 2px solid #f17878;
+  background-color: #fdf3f3;
+  height: 45px;
+  width: 400px;
+  margin-right: 12px;
+}
+
+/* Main Container */
+.container {
+  color: black;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 16vh auto;
+}
+
+.container > div {
+  flex: 1;
+}
+
+/* Pokémon Card */
+#pokemon-card {
+  max-width: 1000px;
+  background-color: #f17878;
+  border: 3px solid #932121;
+  color: #420d0d;
+}
+
+.pokemon-name {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+
+.pokemon-abilities,
+.pokemon-types,
+.pokemon-height,
+.pokemon-weight {
+  text-align: start;
+  margin-top: 4px;
+  padding: 2px;
+}
+
+.pokemon-stats {
+  text-align: right;
+  color: #fdf3f3;
+}
+
+/* Play Cry Button */
+.play-cry {
+  background-color: #932121;
+  padding: 7px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* Pokémon Types */
+.types {
+  display: grid;
+  color: white;
+  margin-left: 8vw;
+}
+
+/* Pokémon Name Buttons */
+.pokeNames {
+  border-radius: 9px;
+  max-width: 90px;
+  margin-top: 20px;
+  padding: 5px 3px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(0deg, #e74c4c, #d32f2f) !important;
+  border: 1px solid #932121 !important;
+}
+
+button:hover {
+  background: linear-gradient(0deg, #d32f2f, #b12424) !important;
+}
+
+/* Submit Button  */
+.submit {
+  border-radius: 9px;
+  max-width: 90px;
+  margin-top: 20px;
+  padding: 7px 3px;
+}

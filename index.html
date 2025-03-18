@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokéCards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body class="bg-[#0d181a]">
+    <div>
+      <nav class="bg-[#f17878]">
+        <a href="#">Home</a>
+        <a href="https://pokeapi.co/">API</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <img src="pokemon.png" alt="Pokemon" />
+      <div class="hero-text">
+        <h1 class="logo">PokéCards</h1>
+        <p class="text-8xl -ml-2">Catch 'Em All!</p>
+        <p class="text-4xl">But First, Let's Find 'Em! 🔍</p>
+      </div>
+    </div>
+    <hr />
+    <!-- <section id="about"></section> -->
+    <div class="card">
+      <h1>SEARCH YOUR POKEMON</h1>
+      <div class="search-submit">
+        <input
+          type="text"
+          style="text-transform: uppercase"
+          class="search"
+          placeholder="Search here..."
+        />
+        <button class="submit">Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="types">
+        <button class="pokeNames" value="pikachu">Pikachu</button>
+        <button class="pokeNames" value="charizard">Charizard</button>
+        <button class="pokeNames" value="bulbasaur">Bulbasaur</button>
+        <button class="pokeNames" value="squirtle">Squirtle</button>
+        <button class="pokeNames" value="mewtwo">Mewtwo</button>
+        <button class="pokeNames" value="gengar">Gengar</button>
+        <button class="pokeNames" value="rayquaza">Rayquaza</button>
+        <button class="pokeNames" value="greninja">Greninja</button>
+        <button class="pokeNames" value="snorlax">Snorlax</button>
+        <button class="pokeNames" value="dragonite">Dragonite</button>
+      </div>
+      <div class="types">
+        <button class="pokeNames" value="arceus">Arceus</button>
+        <button class="pokeNames" value="gyarados">Gyarados</button>
+        <button class="pokeNames" value="garchomp">Garchomp</button>
+        <button class="pokeNames" value="darkrai">Darkrai</button>
+        <button class="pokeNames" value="lugia">Lugia</button>
+        <button class="pokeNames" value="ho-oh">Ho-oh</button>
+        <button class="pokeNames" value="metagross">Metagross</button>
+        <button class="pokeNames" value="zapdos">Zapdos</button>
+        <button class="pokeNames" value="moltres">Moltres</button>
+        <button class="pokeNames" value="articuno">Articuno</button>
+      </div>
+      <div
+        id="pokemon-card"
+        class="w-80 p-5 bg-white rounded-lg shadow-lg text-center"
+      >
+        <h2 class="pokemon-name"></h2>
+        <img class="pokemon-image w-40 mx-auto" src="" />
+        <button class="hidden play-cry">🔊</button>
+        <p class="pokemon-id"></p>
+        <p class="pokemon-types"></p>
+        <p class="pokemon-abilities"></p>
+        <p class="pokemon-height"></p>
+        <p class="pokemon-weight"></p>
+        <div class="pokemon-stats"></div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="foot"><div>Made With 🧠 by Vipul</div></footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
